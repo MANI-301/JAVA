@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class One_TO_N 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter Any Number:");
+		int n = sc.nextInt();
+		for (int i=1;i<=n;i++)
+		{
+			System.out.println(i+"");
+		}
+	}
+}

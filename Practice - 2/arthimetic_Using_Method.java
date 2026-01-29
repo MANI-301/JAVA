@@ -1,0 +1,99 @@
+import java.util.Scanner;
+class  arthimetic_Using_Method
+{
+	public static void main(String[] args) 
+{
+		
+		do
+		{
+		System.out.println("Select the Input");
+		System.out.println("________________________________________");
+		System.out.println("Addition"); 
+		System.out.println("Subtraction");
+		System.out.println("Multiplication");
+		System.out.println("Division");
+		System.out.println("Modules");
+		
+		System.out.println("Exit");
+		
+		
+		System.out.print("\t\t\t\t Select The Option:");
+		int n = nextInt();
+		
+
+		switch (n)
+		{
+		case 1:
+			{
+			       String a = add(10,20);
+						System.out.println(a);
+				   
+				break;
+				}
+		case 2:
+				{
+					String s = sub(20,10);
+						System.out.println(s);
+				
+				break;
+				}
+		case 3:{
+			      String m = mul(5,10);
+						System.out.println(m);
+			break;} 
+		case 4:{
+			      String d = div(10,2);
+						System.out.println(d);
+			break;
+			}
+		case 5:
+			{         
+					String mod = sub(5,2);
+						System.out.println(mod);
+			break;} 
+			
+		case 6:
+			{		String e = exit();
+						System.out.println(e);
+	
+			break;} 
+		}
+		
+		}
+}
+   while (n==0 || n>6 )
+			{
+				System.out.println("Invalid Selection");
+			}			
+			 public static String add(int a ,int b)
+				{
+					System.out.println(a+b);
+					return "Addition Sucessfully Executed";
+				}
+		 public static String sub(int a ,int b)
+				{
+					System.out.println(a-b);
+					return "Subtraction Sucessfully Executed";
+				}	   
+         public static String mul(int a,int b)
+			{
+				System.out.println(a*b);
+				return "Multiplication Sucessfully Executed";
+			}
+		public static String div(int a,int b)
+			{
+				System.out.println(a/b);
+				return "Division Sucessfully Executed";
+			}
+	    public static String mod(int a,int b)
+			{
+				System.out.println(a%b);
+				return "Modules Sucessfully Executed";
+			}
+			
+
+	    public static String exit()
+			{
+				return "Thank you";
+			}
+}

@@ -1,0 +1,80 @@
+import java.util.Scanner;
+class Pattern 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) throws Exception
+	{
+		System.out.print("\t\t\t\t\tEnter Number:");
+		int n = sc.nextInt();
+		System.out.println("\t\t\t\t\tProcessing......");
+		Thread.sleep(2000);
+		int j = 0;
+		for (int i=0;i<n;i++)
+		{
+			for (j=0;j<n;j++)
+			{
+				if (i==j && i<n/2 || i+j==n-1 && i<n/2|| j==0  || j==n-1)
+				{
+					System.out.print("M ");
+					Thread.sleep(30);
+				}
+				else
+					{
+					System.out.print("  ");
+					} 
+					
+			}System.out.print("    ");
+		
+			for (j=0;j<n;j++)
+			{
+				if (i==n/2 || j==0  || i==0 ||  j==n-1)
+				//if (j==5&&i==0||i==2&&j==4||i==3&&j==3)
+				
+				{
+					System.out.print("A ");
+					Thread.sleep(30);
+				}
+				else
+				{
+				System.out.print("  ");
+				}
+				
+			}System.out.print("    ");
+			for (j=0;j<n ;j++ )
+			{
+			
+			
+				if (j==0 || i==j || j==n-1)
+				{
+					System.out.print("N ");
+					Thread.sleep(30);
+				}
+				else
+				{
+					System.out.print("  ");
+				}   
+				
+			}System.out.print("    ");
+
+			for ( j=0;j<n;j++)
+			{
+				if (i==0 || i==n-1 || j==n/2)
+				{
+					System.out.print("I ");
+					Thread.sleep(30);
+				}
+				else
+				{
+					System.out.print("  ");
+				}
+				
+			}
+			System.out.print("  ");
+			
+			
+			System.out.println("  ");
+		}
+	}
+		
+		}
+

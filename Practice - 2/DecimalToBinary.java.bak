@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class  DecimalToBinary
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		String last_digit = "";
+		System.out.print("enter your number:");
+		int Number = sc.nextInt();
+		while (Number>0)
+		{
+			last_digit = Number%2 + last_digit;
+			Number/=2;
+			
+		}
+		System.out.println("Processing...");
+		Thread.sleep(3000);
+		System.out.println(last_digit);
+	}
+}

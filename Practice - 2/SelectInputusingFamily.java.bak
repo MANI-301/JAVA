@@ -1,0 +1,42 @@
+import java.util.Scanner;
+class SelectInputusingFamily
+{
+static Scanner sc = new Scanner(System.in);
+public static void main (String[]args)
+{
+	boolean a = true;
+	do
+	{
+		System.out.println("Select the Input:");
+		System.out.println("1.Father Name");
+		System.out.println("2.Mother Name");
+		System.out.println("3.Exit");
+		System.out.print("/t/t/t/tEnter Your Choice:");
+	    int number = sc.nextInt();
+        switch (number)
+		{
+		case 1:
+			{
+			System.out.println("/t/t/t/tChandiran");
+		break;
+			}
+		case 2 :{
+			System.out.println("/t/t/t/tDharani");
+		break;
+		}
+		case 3:{
+			a = false;
+		break;
+		}
+		}
+	}
+	while (a);
+	
+	        System.out.println("/t/t/t/tThank You");
+				
+		
+	
+	
+
+}
+	}
