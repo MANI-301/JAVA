@@ -1,0 +1,22 @@
+import java.util.*;
+class PalindromeStr
+{
+	public static void main(String[] args)
+	{
+	    Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Text:");
+		String s = sc.nextLine(); // next() Reads one word (until a space)	Ex:hello world	o/p: hello
+		String temp = "";         // nextLine() Reads entire line (until Enter is pressed)  Ex:hello world	o/p: hello world
+		 for (int i=s.length()-1;i>=0;i--) 
+		 {
+			  temp += s.charAt(i);  
+		 }
+		 if (temp.equals(s))
+		 {
+			 System.out.println("Palindrome");
+		 }
+		 else{
+		System.out.println("Not Palindrome");
+		}
+		}
+	}

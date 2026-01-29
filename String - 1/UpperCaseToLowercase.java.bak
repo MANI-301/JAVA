@@ -1,0 +1,16 @@
+class UppercaseToLowercase
+{
+	public static void main(String[] args) 
+	{
+		String a = "manivannan";
+		System.out.println(a.toUpperCase());
+		String b = "MANIVANAN";
+		String b1 = b.toLowerCase();
+		System.out.println(b1);
+		
+		
+		char[]a1 = {'a','b','c','d'};
+		String s1 = new string(a1);
+		System.out.println(s1);
+	}
+}

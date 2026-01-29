@@ -1,0 +1,20 @@
+import java.util.*;
+class Program 
+{
+	public static void main(String[] args) 
+	{
+		int a =10;
+		int b =10;
+		if (a==b)
+		{
+			System.out.println("equal");
+		}
+		String a1 = "jaVa";
+		String a2 = "JAVA";
+		if (a1.equalsIgnorecase(a2))
+		{
+			System.out.println("Correct");
+		}
+		
+	}
+}
