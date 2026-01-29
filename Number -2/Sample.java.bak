@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Sample 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter your input");
+		char n = sc.next().charAt(0);
+		if (n>='0' && n<='9')
+		{
+			System.out.println("It is a Number");
+			
+		}
+		else if (n>='A' && n<='Z' || n>='a' && n<='z')
+		{
+			System.out.println("It is Alaphabets");
+			
+		}
+		else 
+			System.out.println("It is Special Character");
+		
+		
+	}
+}

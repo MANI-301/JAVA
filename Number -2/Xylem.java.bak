@@ -1,0 +1,23 @@
+class Xylem
+{
+	public static void main(String[]args)
+	{
+		int first = 1234;
+		int last = first%10, first_last = 0,in_between=0;
+		while (first>0)
+		{
+			while (first>last)
+			{
+				if (first)
+				{
+				}
+				
+			}
+
+			first/=10;
+			
+		}
+	     first_last +=last+first;
+	}	
+	
+} 

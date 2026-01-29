@@ -1,0 +1,61 @@
+import java.util.Scanner;
+class Swiggy 
+{
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) throws Exception
+	{
+		int num = 987654321;
+		System.out.println("Welcome to Swiggy");
+		System.out.println("-------------------");
+		System.out.print("\t\t\tEnter Your Mobile No:");
+		int Mobile_no =sc.nextInt();
+		if (num == Mobile_no)
+		{
+			System.out.print("\t\t\tYour Otp is:");
+			int Otp_send = (int) (Math.random()*9999+9999);
+		    System.out.println(Otp_send);			
+			Thread.sleep(2000);
+			System.out.print("\t\t\tEnter Your Otp:");
+			int Otp = sc.nextInt();
+			if (Otp_send == Otp)
+			{	 
+				System.out.println("Login Successfull \n\n");
+				
+				
+				
+				System.out.print("Select the Hotel");
+				System.out.print("----------------------");
+				System.out.print("1.Buhari");
+				System.out.print("2.A2B");
+				System.out.print("3.SS Hydrebad");
+				System.out.print("4.Amma Canteen");
+				System.out.print("Select Your Choice:");
+				int Hotel_selection = sc.nextInt();
+				
+				switch (Hotel_selection)
+				{
+				case 1:{
+					       System.out.println("Greetings from Buhari");
+					       System.out.println("-------------------------------");
+					       System.out.println("Select Your Food \n ---------------------------------------------");
+					       System.out.println("Chicken Biriyani");
+					       System.out.println("Mutton Biriyani");
+					       System.out.println("Prawn Biriyani");
+						   
+					break;}
+				
+				} 
+				
+				
+				
+				
+				
+			}
+			
+		}
+		else
+			System.out.println("Login Failed"); 
+		
+		
+	}
+}

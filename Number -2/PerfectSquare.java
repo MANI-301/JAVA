@@ -1,0 +1,28 @@
+import java.util.*;
+class PerfectSquare
+{
+	static Scanner sc = new Scanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Num:");
+		int n = sc.nextInt();
+		boolean tf = false;
+		for (int i=0;i<=n;i++ )
+		{
+			if (i*i==n)
+			{
+				tf = true;
+				break;
+			}
+			
+		}
+		if (tf)
+		{
+			System.out.println("Pefect Square");
+		}
+		
+		else
+				System.out.println("Not Perfect Square");
+		
+	}
+}

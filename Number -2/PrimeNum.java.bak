@@ -1,0 +1,33 @@
+import java.util.*;
+class PrimeNum 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Your Num:");
+		int n = sc.nextInt();
+		if (n == 0 || n == 1) // 0 & 1 are whether it is prime or not
+		{
+			System.out.println("Neither Prime nor Composite");
+		}
+		else 
+			{
+		boolean tf =true;
+		for (int i=2;i<=n/2;i++) // why i=2 means we know 1&2 // why n/2 means   
+		{
+			if (n%i==0)
+			{
+				tf = false;
+					break;
+			}
+		}
+			if (tf)
+			{
+				System.out.println("It is a Prime Number");
+			}
+			else 
+				System.out.println("It is a Composite");
+		}
+		
+	}
+}

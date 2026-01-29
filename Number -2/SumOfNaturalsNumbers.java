@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class SumOfNaturalsNumbers 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter Any Number:");
+		int n = sc.nextInt();
+		int Number = 1;
+		int sum = 0;
+		
+		while (Number<=n)
+		{
+			sum+=Number;
+			Number++;
+		}
+		System.out.println(sum);
+	}
+}

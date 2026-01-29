@@ -1,0 +1,20 @@
+import java.util.*;
+class XPowerN
+{
+	static Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter X:");
+		int x = sc.nextInt();
+		System.out.print("Enter N:");
+		int n = sc.nextInt();
+		int res=1;
+		for (int i=1;i<=n;i++)
+		{
+			 res*=x;
+		}
+			 System.out.println("X:"+x);
+			 System.out.println("N:"+n);
+			 System.out.print("X power of n is:"+res);
+	}
+}

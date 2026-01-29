@@ -1,0 +1,14 @@
+class  Test
+{
+	public static void main(String[] args) 
+	{
+		int a=0,b=28;
+		a*=10+b%10;
+		b*=2-(b+32);
+		
+        System.out.println(a);
+        System.out.println(b);
+
+		
+	}
+}

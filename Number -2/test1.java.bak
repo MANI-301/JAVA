@@ -1,0 +1,14 @@
+class test1 
+{
+	public static void main(String[] args) 
+	{
+		/*int a =65;
+		char res =(char) a;
+		System.out.println(a);
+		System.out.println(res);*/
+		System.out.println( 'a');
+		System.out.println( 'b');
+		
+		
+	}
+}

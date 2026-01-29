@@ -1,0 +1,50 @@
+class Xylem
+{
+	public static void main(String[]args)
+	{
+		int xylem = 12135;
+		int first=xylem,btw=0,last=xylem%10,first_last=0;
+		//
+		
+		xylem/=10;
+		System.out.println(last);
+		do
+		{
+			{
+			//first+=xylem%10;
+			//xylem/=10;
+			btw+=xylem%10;
+			xylem/=10;
+		//}while(xylem<10);
+		}
+		}
+		while (xylem>10);
+		
+		System.out.println(btw);
+		System.out.println(xylem);
+		
+			 //first_last+=first+last;
+			 first_last=xylem+last;
+			 System.out.println(first_last);
+				if (first_last==btw)
+				{
+					System.out.println("Xylem");
+				}
+				else
+					System.out.println("Pylem");
+				
+			
+			
+			
+		}
+	}	
+	/*
+ do
+		{
+			//first+=xylem%10;
+			//xylem/=10;
+			btw+=xylem%10;
+			xylem/=10;
+		//}while(xylem<10);
+		}
+		while(xylem<10);*/ 

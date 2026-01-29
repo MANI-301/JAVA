@@ -1,0 +1,25 @@
+class xylem1 
+{
+	public static void main(String[] args) 
+	{
+		int xylem = 9191;
+		int first=0,last=xylem%10,first_last=0,btw=0;
+		xylem/=10;
+	    do
+	    {
+			btw+=xylem%10; // 123%10=3 ------> 12%10=2 --------->
+			first=xylem%10; // 123%10=3 ------> 12%10=2 ------> 
+			xylem/=10;   // 123/10=12 ------> 12/10=1 ------> 
+	    }
+	    while (xylem>9);
+		        
+			first_last=xylem+last;
+			
+			if (first_last==btw)
+			{
+				System.out.println("xylem");
+			}
+			else 
+				System.out.println("Phloem");
+	}
+}
