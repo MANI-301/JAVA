@@ -1,0 +1,23 @@
+import java.util.*;
+class Arm 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter num:");
+		int n = sc.nextInt();
+		int sum =0,temp=n,last=0;
+        while (n>0)
+        {
+			last=n%10;
+			sum+=last*last*last;
+			n/=10;
+        }
+		if (temp==sum)
+		{
+			System.out.println("It is ArmStrong");
+		}
+		else 
+			System.out.println("It is not a Armstrong")
+	}
+}

@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Otp 
+{
+	static int otp;
+	static Scanner s = new Scanner(System.in);
+	public static void main(String[] args) throws Exception 
+	{
+		System.out.println("\t\t\t\t\t\t\tLogin");
+		long num = 9876543210l;
+		System.out.print("\t\t\t\t\tEnter Your Number:");
+		long n = s.nextLong();
+		if (num == n)
+		{
+		int otp =  (int) (Math.random()*9999+9999);
+		System.out.println("\t\t\t\t\tYour Otp is:"+ otp);
+		System.out.print("\t\t\t\t\tEnter Your Otp:");
+		int pwd = s.nextInt();
+		if (pwd==otp)
+		{
+			Thread.sleep(3000);
+	    System.out.println("\t\t\t\t\tLogin Sucessful");
+		}
+		
+	   else if (pwd != otp)
+		{
+		 
+			System.out.println("Incorrect Otp");
+		}
+		}
+		else if (num !=n)
+		{
+		
+			System.out.println("Login Failed");
+		}
+	}
+}

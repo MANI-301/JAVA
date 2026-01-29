@@ -1,0 +1,27 @@
+import java.util.*;
+class Happy 
+{
+	static Scanner sc = new Scanner (System.in); 
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Num:");
+		int n = sc.nextInt();
+		
+		while (n!=1 && n!=4)
+		{
+			int sum=0;
+			while (n>0)
+			{
+				sum+=n%10*n%10;
+				n/=10;
+			}
+			n=sum;
+		}
+		if (n==1)
+		{
+			System.out.println("Happy Number");
+		}
+		else 
+			System.out.println("UnHappy Number");
+	}
+}
