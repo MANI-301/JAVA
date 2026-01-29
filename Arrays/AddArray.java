@@ -1,0 +1,21 @@
+import java.util.*;
+class AddArray 
+{
+	static int sum=0;
+	public static void main(String[] args) 
+	{
+		int[]a={10,20,30,40,50,60};
+		int res = solve(a);
+		System.out.println(res);
+	}
+	public static int solve(int[]b)
+	{
+		
+		for (int i=0;i<b.length;i++ )
+		{
+		   sum+=b[i];
+		}
+		return sum;
+	}
+	
+}

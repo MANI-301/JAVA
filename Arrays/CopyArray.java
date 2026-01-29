@@ -1,0 +1,20 @@
+import java.util.*;
+class CopyArray 
+{
+	public static void main(String[] args) 
+	{
+		int []a = {1,2,3,4,5,6,7,8};
+		int []b= solve(a);
+		System.out.println(Arrays.toString(a));
+		System.out.println(Arrays.toString(b));
+	}
+	public static int[] solve(int []x)
+	{
+		int [] y = new int [x.length];
+		for (int i=0;i<x.length;i++ )
+		{
+			y[i]= x[i];
+		}
+		return y;
+	}
+}

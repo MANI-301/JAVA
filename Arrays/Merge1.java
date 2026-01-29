@@ -1,0 +1,27 @@
+import java.util.*;
+class Merge1 
+{
+	public static void main(String[] args) 
+	{
+		int a[]= {10,20,30,40};
+		int [] b = {50,60,70,80};
+		int [] res = solve(a,b);
+		System.out.println(Arrays.toString(res));
+	}
+	public static int[] solve(int[]a , int[]b)
+	{
+		int []c = new int[a.length + b.length];
+		for (int i=0,j=0,k=0;i<c.length;i++)
+		{
+			if (j<a.length)
+			{
+				c[i]=a[j++];
+			}
+			else if (k<b.length)
+			{
+				c[i] = b[k++];
+			}
+		}
+		return c;
+	}
+	}

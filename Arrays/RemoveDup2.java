@@ -1,0 +1,34 @@
+import java.util.*;
+class RemoveDup2 
+{
+	public static void main(String[] args) 
+	{
+		int[]a = {1,1,2,2,3,4,4,5};
+		int[]b = new int [a.length];
+		int k=0;
+		for (int j=0;j<a.length;j++)
+		{
+			boolean duplicate = false;
+			
+			for (int i=0;i<j;i++)
+			{
+				
+				if (a[i]==a[j])
+			    {
+				   duplicate = true;
+				   break;
+			    }
+			}
+			if (!duplicate)
+			{
+				b[k++]=a[j];
+			}
+			
+		}
+		if (!0)
+		{
+			System.out.println(Arrays.toString(b));
+		}
+		
+	}
+}
