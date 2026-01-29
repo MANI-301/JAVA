@@ -1,0 +1,18 @@
+import java.util.*;
+class C1 
+{
+	static Scanner sc = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		do{
+		System.out.print("Enter Num:");
+		int Num = sc.nextInt();
+		i++;
+		while (i<6)
+		{
+		ArrayList<Integer> l1 = new ArrayList();
+		l1.add(Num);
+		System.out.println(l1);
+		}
+	}}
+}
