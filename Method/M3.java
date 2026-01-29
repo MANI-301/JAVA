@@ -1,0 +1,15 @@
+class  M3
+{
+	public static void main(String[] args) 
+	{
+		int f = call(5);
+		System.out.println(f);
+		
+	}
+	public static int call(int a)
+	{
+		int res = 10+20;
+		System.out.println(res);
+		return res;
+	}
+}
